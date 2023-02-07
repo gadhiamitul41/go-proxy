@@ -25,7 +25,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			log.Println(err)
 		}
-		context.SetHeader("Content-Type", "application/octet-stream")
+		//context.SetHeader("Content-Type", "application/octet-stream")
 		context.Data(200, res)
 	})
 	server.Handle(w, r)
